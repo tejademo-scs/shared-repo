@@ -23,8 +23,10 @@ jobs:
       - name: Setup pipeline enforcer
         uses: aquasecurity/pipeline-enforcer-action@main
         with:
-         aqua-key: ${{ secrets.AQUA_KEY }}
-         aqua-secret: ${{ secrets.AQUA_SECRET }}
+         #aqua-key: ${{ secrets.AQUA_KEY }}
+          aqua-key: fcakfVkkWNaWLYvs5A5qfR
+          aqua-secret: 41darGQlrtq324I0HnYbO6KhNB6FKDjTrsf
+         #aqua-secret: ${{ secrets.AQUA_SECRET }}
 
       - name: Run Aqua scanner
         uses: docker://aquasec/aqua-scanner:latest
